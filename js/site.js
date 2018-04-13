@@ -1,4 +1,4 @@
-﻿wow = new WOW({ offset: 100 });
+﻿wow = new WOW({ offset: 0 });
 wow.init();
 $(function () {
     /** Banner */

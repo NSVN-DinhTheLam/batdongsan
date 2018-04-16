@@ -120,11 +120,13 @@ hr.dashed{border-style:dashed;}
 .home-feature .owl-nav .owl-prev{left:-30px;}
 .home-feature .owl-nav .owl-next{right:-10px;}
 
-.home-feature .box-item{position:relative; overflow:hidden;margin:0 20px;transition: all 0.2s ease;}
-.home-feature .box-item:hover {box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);border-bottom-color: #969696;}
+.home-feature .home-feature-box .box-item{position:relative; overflow:hidden; margin:0 20px; transition: all 0.2s ease;}
 @media all and (min-width: 768px) {
-  .home-feature .box-item{margin:0 20px 0 0;}
+  .home-feature .home-feature-box .box-item{margin:0 20px 0 0;}
 }
+
+.home-feature .box-item {margin-bottom: 30px;}
+.home-feature .box-item:hover {box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);border-bottom-color: #969696;}
 .home-feature .box-item .image-box {position: relative;display:block;background:#f0f0f0; overflow: hidden;}
 .home-feature .box-item .image-box .placeholder {width: 100%; z-index: 0;}
 .home-feature .box-item .image-box .image {position: absolute; top:0; background:#fff; overflow: hidden; width:100%; height: 100%; background-repeat: no-repeat; background-size: 100% auto; box-shadow: 0 1px 4px 0 rgba(0,0,0,0.45); transition: transform 0.5s ease; z-index: 1;}
@@ -195,7 +197,9 @@ hr.dashed{border-style:dashed;}
     .news-list .full .image{float:none;margin-right:0;width:100%;}
 }
 
-.side-bar{position: sticky;}
+.portfolio-banner {background-size: #4fb744 100% auto no-repeat;height: 318px; position: relative; top: -1rem;}
+.portfolio-banner .container {height: 100%;}
+.portfolio-info {position: absolute; height: 100%; background:rgba(0,0,0,0.45); color:#fff;}
 
 .call-to-action {padding:40px 0;}
 .call-to-action .call{position: relative; background-color:#4fb744; color:#fff !important; margin-top: 25px;width: 80%; border-radius: 30px;}

@@ -26,6 +26,16 @@
   <script src="vendor/wow/wow.min.js"></script>
   <script src="js/site.js"></script>
 
+  <script>
+    $(window).scroll(function(e) {
+      if ($(document).scrollTop() >= $(".portfolio-menu").offset().top) {
+          $(".portfolio-menu").addClass("fixed");
+      } else {
+          $(".portfolio-menu").removeClass("fixed");
+      }
+    })
+  </script>
+
 </head>
 
 <body>

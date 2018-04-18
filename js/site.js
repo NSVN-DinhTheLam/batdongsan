@@ -47,12 +47,6 @@ $(function () {
         else {
             $(".navbar-main").addClass("fixed");
         }
-
-        if ($(document).scrollTop() >= $(".portfolio-menu").offset().top) {
-            $(".portfolio-menu").addClass("fixed");
-        } else {
-            $(".portfolio-menu").removeClass("fixed");
-        }
     })
     $('body').scrollspy({ target: '.portfolio-menu', offset: 72 })
 

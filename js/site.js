@@ -41,11 +41,11 @@ $(function () {
     
     /** On Body scroll down */
     $(window).scroll(function(e) {
-        if ($(".navbar-main").offset().top == 0) {
-            $(".navbar-main").removeClass("fixed");
+        if ($(document).scrollTop() >= $(".navbar-main").offset().top) {
+            $(".navbar-main").addClass("fixed");
         }
         else {
-            $(".navbar-main").addClass("fixed");
+            $(".navbar-main").removeClass("fixed");
         }
     })
     $('body').scrollspy({ target: '.portfolio-menu', offset: 72 })
@@ -69,7 +69,7 @@ $(function () {
     $('.scroll-to').click(function (e) {
         e.preventDefault();
         $("html").animate({scrollTop: $($.attr(this, 'href')).offset().top - 71}, 500);
-        //$("body").animate({scrollTop: $($.attr(this, 'href')).offset().top - 71}, 500);
+        $("body").animate({scrollTop: $($.attr(this, 'href')).offset().top - 71}, 500);
         return false;
     });
 
